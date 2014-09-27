@@ -26,3 +26,4 @@ Forma de Uso
 * Para que a maquina virtual reconheça os arquivos basta usar o **$ vagrant reload** ou reiniciar o apache.
     * $ vagrant ssh 
     * $ sudo service apache restart
+    * **OBS: Não é necessário fazer o $ vagrant provision**
