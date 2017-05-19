@@ -1,14 +1,16 @@
 
-BOX_NAME       = "nome-do-box"
+BOX_NAME       = "jobsDin"
 BOX_MEMORY     = 512
-BOX_IP         = "192.168.50.XX"
-SYNCED_FOLDER  = "~/Dropbox/jobs/nome-da-pasta/"
+BOX_IP         = "192.168.20.10"
+SYNCED_FOLDER  = "~/Jobs/"
 
 Vagrant.configure("2") do |config|
 	config.vm.box = "ubuntu1404x64"
 	config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
 	config.vm.hostname = "localhost"
 	config.vm.network "private_network", ip: BOX_IP
+	#config.vm.network "public_network", ip: BOX_IP
+
 
 	config.vm.provider "virtualbox" do |v|
 		v.name = BOX_NAME
